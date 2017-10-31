@@ -118,8 +118,10 @@ while (i!=4)
       for(j=0;j<3;j++)
 	 {for(k=0;k<3;k++)
 	     {if(a[j][k].num!=0)
-		{printf("1 ");}
-	     else{printf("0 ");}
+		{textcolor(RED);
+		 cprintf("0 ");}
+	     else{textcolor(BLUE+BLINK);
+		     cprintf("0 ");}
 	      }
 	  printf("\n");
 	  }
