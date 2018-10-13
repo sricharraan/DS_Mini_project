@@ -10,6 +10,19 @@ struct space
 struct space a[3][3]={0};
 
 
+void DISP()
+{
+int j,k;
+
+for(j=0;j<3;j++)
+	 {for(k=0;k<3;k++)
+	    { printf("%d ",a[j][k].num);
+
+	      }
+	  printf("\n");
+	  }
+
+}
 
 void IN()
 {int flag=0;
@@ -85,19 +98,6 @@ if(flag==1)
 
 }
 
-void DISP()
-{
-int j,k;
-
-for(j=0;j<3;j++)
-	 {for(k=0;k<3;k++)
-	    { printf("%d ",a[j][k].num);
-
-	      }
-	  printf("\n");
-	  }
-
-}
 
 void main()
 {int i=0;
